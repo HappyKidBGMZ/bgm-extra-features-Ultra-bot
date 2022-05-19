@@ -456,6 +456,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [[
                    InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
                    InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+                   ],[
+                   InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
                   ]]                                                  
             except Exception as e:
                 logger.exception(e)
@@ -505,6 +507,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [[
                    InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
                    InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+                   ],[
+                   InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
                   ]]
             except Exception as e:
                 logger.exception(e)
