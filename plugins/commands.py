@@ -246,6 +246,9 @@ async def start(client, message):
         [
           InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
           InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+        ],
+        [
+          InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
         ]
         ]
     await client.send_cached_media(
