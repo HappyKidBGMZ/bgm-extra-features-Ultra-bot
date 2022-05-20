@@ -201,20 +201,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("⬅️ 𝐁𝐀𝐂𝐊 ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🌹 𝐏𝐀𝐆𝐄 {round(int(offset) / 10) + 1} / {round(total / 10)} 🌹",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🌹 𝐏𝐀𝐆𝐄 {round(int(offset) / 10) + 1} / {round(total / 10)} 🌹", callback_data="pages"),
+             InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("⬅️ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🌹 𝐏𝐀𝐆𝐄 {round(int(offset) / 10) + 1} / {round(total / 10)} 🌹", callback_data="pages"),
+                InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -454,10 +454,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
                 buttons = [[
-                   InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
-                   InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+                   InlineKeyboardButton('🍁 𝐆𝐑𝐎𝐔𝐏 𝟏 🍁', url="https://t.me/+MB8a61q_98A3MThl"),
+                   InlineKeyboardButton('🧩 𝐆𝐑𝐎𝐔𝐏 𝟐 🧩', url="https://t.me/+nU29zGz85LQxZTVl")
                    ],[
-                   InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
+                   InlineKeyboardButton('🧞‍♂️ 𝐉𝐎𝐈𝐍 𝐍𝐎𝐖 🧞‍♀️', url="https://t.me/BGM_Linkzz")
                   ]]                                                  
             except Exception as e:
                 logger.exception(e)
@@ -505,10 +505,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
                 buttons = [[
-                   InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
-                   InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+                   InlineKeyboardButton('🍁 𝐆𝐑𝐎𝐔𝐏 𝟏 🍁', url="https://t.me/+MB8a61q_98A3MThl"),
+                   InlineKeyboardButton('🧩 𝐆𝐑𝐎𝐔𝐏 𝟐 🧩', url="https://t.me/+nU29zGz85LQxZTVl")
                    ],[
-                   InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
+                   InlineKeyboardButton('🧞‍♂️ 𝐉𝐎𝐈𝐍 𝐍𝐎𝐖 🧞‍♀️', url="https://t.me/BGM_Linkzz")
                   ]]
             except Exception as e:
                 logger.exception(e)
@@ -759,15 +759,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton(' ➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 🥰 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
+            InlineKeyboardButton('🍿 𝐌𝐨𝐯𝐢𝐞𝐙 🎬 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 🍿', url='https://t.me/BGM_LinkzZ'),
+            InlineKeyboardButton('💖 𝐁𝐨𝐓 💝 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 💖', url='https://t.me/HappyKidBGMZ')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('💫 𝐇𝐄𝐋𝐏 💫', callback_data='help'),
+            InlineKeyboardButton('🧞‍♀️ 𝐀𝐁𝐎𝐔𝐓 🧞‍♂️', callback_data='about')
             ],[
-            InlineKeyboardButton('🖤 More Updatez 🖤', url='https://linktr.ee/HappyKidBGMZ')
+            InlineKeyboardButton('👻 𝐌𝐎𝐑𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐙 👻', url='https://linktr.ee/HappyKidBGMZ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -904,7 +904,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Aadhi000/Ajax')
+            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Lastdrogz')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
@@ -1370,12 +1370,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🌹 𝐏𝐀𝐆𝐄 1/{round(int(total_results) / 10)} 🌹", callback_data="pages"),
+             InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🌹 𝐏𝐀𝐆𝐄 1/1 🌹", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1532,4 +1532,4 @@ async def manual_filters(client, message, text=False):
     else:
         return False
 
-#ᗩᒍᗩ᙭
+#Happy
