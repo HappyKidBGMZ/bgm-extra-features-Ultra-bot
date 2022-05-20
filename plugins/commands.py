@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃', url=f"https://t.me/Aadhi011")
+                InlineKeyboardButton('𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃', url=f"https://t.me/happy_kid_sk")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -39,15 +39,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton(' ➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 🥰 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
+            InlineKeyboardButton('🍿 𝐌𝐨𝐯𝐢𝐞𝐙 🎬 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 🍿', url='https://t.me/BGM_LinkzZ'),
+            InlineKeyboardButton('💖 𝐁𝐨𝐓 💝 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 💖', url='https://t.me/HappyKidBGMZ')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('💫 𝐇𝐄𝐋𝐏 💫', callback_data='help'),
+            InlineKeyboardButton('🧞‍♀️ 𝐀𝐁𝐎𝐔𝐓 🧞‍♂️', callback_data='about')
             ],[
-            InlineKeyboardButton('🖤 More Updatez 🖤', url='https://linktr.ee/HappyKidBGMZ')
+            InlineKeyboardButton('👻 𝐌𝐎𝐑𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐙 👻', url='https://linktr.ee/HappyKidBGMZ')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -66,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "🔥 𝐉𝐎𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -82,15 +82,15 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton(' ➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 🥰 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
+            InlineKeyboardButton('🍿 𝐌𝐨𝐯𝐢𝐞𝐙 🎬 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 🍿', url='https://t.me/BGM_LinkzZ'),
+            InlineKeyboardButton('💖 𝐁𝐨𝐓 💝 𝐔𝐩𝐝𝐚𝐭𝐞𝐙 💖', url='https://t.me/HappyKidBGMZ')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('💫 𝐇𝐄𝐋𝐏 💫', callback_data='help'),
+            InlineKeyboardButton('🧞‍♀️ 𝐀𝐁𝐎𝐔𝐓 🧞‍♂️', callback_data='about')
             ],[
-            InlineKeyboardButton('🖤 More Updatez 🖤', url='https://linktr.ee/HappyKidBGMZ')
+            InlineKeyboardButton('👻 𝐌𝐎𝐑𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐙 👻', url='https://linktr.ee/HappyKidBGMZ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -134,8 +134,8 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
             [
-                  InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
-                  InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+                  InlineKeyboardButton('🍁 𝐆𝐑𝐎𝐔𝐏 𝟏 🍁', url="https://t.me/+MB8a61q_98A3MThl"),
+                  InlineKeyboardButton('🧩 𝐆𝐑𝐎𝐔𝐏 𝟐 🧩', url="https://t.me/+nU29zGz85LQxZTVl")
             ]
             ]
             try:
@@ -244,11 +244,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-          InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url="https://t.me/PeterParkerspide"),
-          InlineKeyboardButton('🧩 Oᴛʜᴇʀ ʙᴏᴛs', url="https://t.me/peterparker088github")
+          InlineKeyboardButton('🍁 𝐆𝐑𝐎𝐔𝐏 𝟏 🍁', url="https://t.me/+MB8a61q_98A3MThl"),
+          InlineKeyboardButton('🧩 𝐆𝐑𝐎𝐔𝐏 𝟐 🧩', url="https://t.me/+nU29zGz85LQxZTVl")
         ],
         [
-          InlineKeyboardButton('🧞‍♂️ JOIN NOW 🧞‍♀️', url="https://t.me/BGM_Linkzz")
+          InlineKeyboardButton('🧞‍♂️ 𝐉𝐎𝐈𝐍 𝐍𝐎𝐖 🧞‍♀️', url="https://t.me/BGM_Linkzz")
         ]
         ]
     await client.send_cached_media(
